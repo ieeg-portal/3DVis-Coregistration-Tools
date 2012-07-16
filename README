@@ -1,5 +1,5 @@
 The 3DVis package provides a bundle for coregistering brain imaging data to create 3D reconstructions with electrode placement and labeled brain regions. 
 
-To install: clone the repository. Download and unzip all packages from the Downloads section and place them in the "lib" directory. Follow the initialization instructions found in Coregister.pdf in the doc folder.
+To install: clone the repository. Download and unzip all packages from the Downloads section and place them in the "lib" directory. Follow the initialization instructions found in Coregister.pdf in the "doc" folder.
 
 This package contains many components of open source, freely available software that I did not develop, but they are included in the package for ease of use and installation. For more information about individual components, please see the documentation or viist the original developers' websites.
