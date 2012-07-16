@@ -1,0 +1,55 @@
+################################################
+# ITK-SnAP Label Description File
+# File format: 
+# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+# Fields: 
+#    IDX:   Zero-based index 
+#    -R-:   Red color component (0..255)
+#    -G-:   Green color component (0..255)
+#    -B-:   Blue color component (0..255)
+#    -A-:   Label transparency (0.00 .. 1.00)
+#    VIS:   Label visibility (0 or 1)
+#    IDX:   Label mesh visibility (0 or 1)
+#  LABEL:   Label description 
+################################################
+    0     0    0    0        0  0  0    "Clear Label"
+    1   255  255  255        0.9  1  1    "Left_Occipital_Lobe"
+    2   255  255  255        0.9  1  1    "Right_Occipital_Lobe"
+    3   255  255  255        0.9  1  1    "Left_Cingulate_Gyrus"
+    4   255  255  255        0.9  1  1    "Right_Cingulate_Gyrus"
+    5   255  255  255        0.9  1  1    "Left_Insula"
+    6   255  255  255        0.9  1  1    "Right_Insula"
+    7   255  255  255        0.9  1  1    "Left_Temporal_Pole"
+    8   255  255  255        0.9  1  1    "Right_Temporal_Pole"
+    9   255  255  255        0.9  1  1    "Left_Sup_Temp_Gyrus"
+   10   255  255  255        0.9  1  1    "Right_Sup_Temp_Gyrus"
+   11   255  255  255        0.9  1  1    "Left_Infero_Temp_Gyrus"
+   12   255  255  255        0.9  1  1    "Right_Infero_Temp_Gyrus"
+   13   255  255  255        0.9  1  1    "Left_Parahippocampal_Gyrus"
+   14   255  255  255        0.9  1  1    "Right_Parahippocampal_Gyrus"
+   15   255  255  255        0.9  1  1    "Left_Frontal_Pole"
+   16   255  255  255        0.9  1  1    "Right_Frontal_Pole"
+   17   255  255  255        0.9  1  1    "Left_Sup_Frontal_Gyrus"
+   18   255  255  255        0.9  1  1    "Right_Sup_Frontal_Gyrus"
+   19   255  255  255        0.9  1  1    "Left_Mid_Frontal_Gyrus"
+   20   255  255  255        0.9  1  1    "Right_Mid_Frontal_Gyrus"
+   21   255  255  225        0.9  1  1    "Left_Inf__Frontal_Gyrus"
+   22   255  255  255        0.9  1  1    "Right_Inf_Frontal_Gyrus"
+   23   255  255  255        0.9  1  1    "Left_Orbital_Frontal_Gyrus"
+   24   255  255  255        0.9  1  1    "Right_Orbital_Frontal_Gyrus"
+   25   255  255  255        0.9  1  1    "Left_Precentral_Gyrus"
+   26   255  255  255        0.9  1  1    "Right_Precentral_Gyrus"
+   27   255  255  255        0.9  1  1    "Left_Sup_Parietal_Lobe"
+   28   255  255  255        0.9  1  1    "Right_Sup_Parietal_Lobe"
+   29   255  255  255        0.9  1  1    "Left_Inf_Parietal_Lobe"
+   30   255  255  255        0.9  1  1    "Right_Inf_Parietal_Lobe"
+   31   255  255  255        0.9  1  1    "Left_Postcentral_Gyrus"
+   32   255  255  255        0.9  1  1    "Right_Postcentral_Gyrus"
+   33   255  255  255        0  1  1    "CSF"
+   34   255  255  255        0.9  1  1    "White_Matter"
+   35   255  255  255        0.9  1  1    "Cerebellar_GM"
+   36   124  252    0        1  1  1    "Label 36"
+   37   255  255  225        1  1  1    "Label 37"
+   38    70  130  180        1  1  1    "Label 38"
+   39     0  100    0     0.36  1  1    "Resected Region"
+   40   255    0    0        1  1  1    "Electrodes"

@@ -1,0 +1,51 @@
+################################################
+# ITK-SnAP Label Description File"
+# File format: 
+# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+# Fields: 
+#    IDX:   Zero-based index 
+#    -R-:   Red color component (0..255)
+#    -G-:   Green color component (0..255)
+#    -B-:   Blue color component (0..255)
+#    -A-:   Label transparency (0.00 .. 1.00)
+#    VIS:   Label visibility (0 or 1)
+#    IDX:   Label mesh visibility (0 or 1)
+#  LABEL:   Label description 
+################################################
+0	0	0	0	0	0	0	"Clear_Label"
+1	255	0	0	0.75	1	1	"Left_Occipital_Lobe"
+2	255	255	0	0.75	1	1	"Right_Occipital_Lobe"
+3	0	0	255	0.75	1	1	"Left_Cingulate_Gyrus"
+4	255	255	0	0.75	1	1	"Right_Cingulate_Gyrus"
+5	0	255	255	0.75	1	1	"Left_Insula"
+6	255	0	255	0.75	1	1	"Right_Insula"
+7	255	239	213	0.75	1	1	"Left_Temporal_Pole"
+8	60	0	225	0.75	1	1	"Right_Temporal_Pole"
+9	205	133	63	0.75	1	1	"Left_Sup_Temp_Gyrus"
+10	205	133	63	0.75	1	1	"Right_Sup_Temp_Gyrus"
+11	102	205	170	0.75	1	1	"Left_Infero_Temp_Gyrus"
+12	0	0	128	0.75	1	1	"Right_Infero_Temp_Gyrus"
+13	0	139	139	0.75	1	1	"Left_Parahippocampal_Gyrus"
+14	46	139	87	0.75	1	1	"Right_Parahippocampal_Gyrus"
+15	255	228	225	0.75	1	1	"Left_Frontal_Pole"
+16	106	90	205	0.75	1	1	"Right_Frontal_Pole"
+17	221	160	221	0.75	1	1	"Left_Sup_Frontal_Gyrus"
+18	233	150	122	0.75	1	1	"Right_Sup_Frontal_Gyrus"
+19	165	42	42	0.75	1	1	"Left_Mid_Frontal_Gyrus"
+20	255	250	250	0.75	1	1	"Right_Mid_Frontal_Gyrus"
+21	147	112	219	0.75	1	1	"Left_Inf__Frontal_Gyrus"
+22	218	112	214	0.75	1	1	"Right_Inf_Frontal_Gyrus"
+23	75	0	130	0.75 1	1	"Left_Orbital_Frontal_Gyrus"
+24	255	182	193	0.75	1	1	"Right_Orbital_Frontal_Gyrus"
+25	60	179	113	0.75	1	1	"Left_Precentral_Gyrus"
+26	255	235	205	0.75	1	1	"Right_Precentral_Gyrus"
+27	255	228	196	0.75	1	1	"Left_Sup_Parietal_Lobe"
+28	218	165	32	0.75	1	1	"Right_Sup_Parietal_Lobe"
+29	0	128	128	0.75	0	1	"Left_Inf_Parietal_Lobe"
+30	188	143	143	0.75	1	1	"Right_Inf_Parietal_Lobe"
+31	255	105	180	0.75	1	1	"Left_Postcentral_Gyrus"
+32	255	105	180	0.75	1	1	"Right_Postcentral_Gyrus"
+33	222 	184 	135	0	1	1	"CSF"
+34	127	255	0	0	1	1	"White_Matter"
+35	139	69	19	0.75	1	1	"Cerebellar_GM"
+40	255 	0	0	1	1	1	"Electrodes"
