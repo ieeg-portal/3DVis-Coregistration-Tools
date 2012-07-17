@@ -67,19 +67,19 @@
 % template
 
 % (short) patient name/id
-ptName = 'hup70';
+ptName = 'hup72';
 
 % Location of 3DVis directory
 vispath='/mnt/local/gdrive/public/3DVis';
 
 % Location of input-output diretory (no trailing filesep)
-in_out='/mnt/local/gdrive/public/pearce/hup70';
+in_out='/mnt/local/gdrive/public/pearce/side_projects/3DVis/hup72_redo';
 
 % Pre-resection patient T1 MR image (high resolution) (nii.gz)
-T1='mri70';
+T1='mri72';
 
 % CT image with electrodes (nii.gz)
-CT='ct70';
+CT='ct72';
 
 % Post-resection patient T2 MR image (nii.gz)
 T2=[]; %'Mayo34_MRI_post';
@@ -92,7 +92,7 @@ resection=[]; %'Mayo34_resected_area';
 %--------------------------------------------------------------------------
 % Segmentation mode (set to '1' if you want 35 brain regions +
 % electrodes, 0 for just electrodes on brain. 0 is much faster)
-segment = 1;
+segment = 0;
 
 % Resection mode (set to '1' if you have post-resection data, otherwise 0)
 resect = 0;
@@ -216,12 +216,14 @@ systemf_db(db, ['c3d %s_deformed_brainOnly.nii.gz -threshold %g 99999 1 0 -o ' .
 fprintf('Done with rigid registration\n\n')
 if unbury
     % make sure electrodes aren't buried in tissue
+    fprintf('Calling digElectrodes(%s_brain_mask.nii.gz'',%s/temp/electrode_aligned.nii.gz)\n', T1path, in_out);
     systemf_db(db, 'cp electrode_aligned.nii.gz electrodes_original.nii.gz'); % file is overwritten in next function
-    digElectrodes([ int_out filesep 'temp/' T1 '_brain_mask.nii.gz'], ... % CHECK THIS
+    digElectrodes([ T1path '_brain_mask.nii.gz'], ... % CHECK THIS
         [in_out filesep 'temp/electrode_aligned.nii.gz']);
 end
-% combine electrodes with brain mask (no segmentation)
+
 if ~segment
+    % combine electrodes with brain mask (no segmentation)
     systemf_db(db, ['c3d electrode_aligned.nii.gz -scale ' ...
         '2 %s_brain_mask.nii.gz -add -clip 0 2 -o ' ...
         '%s_electrode_seg.nii.gz >> %s'], ...
