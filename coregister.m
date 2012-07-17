@@ -1,7 +1,6 @@
 % COREGISTER
 %
 %
-%
 % OUTPUTS:
 %
 % {mriFilename}_brain.nii.gz: skull-stripped MRI  
@@ -30,6 +29,15 @@
 %       Nifti toolbox for Matlab
 %       systemf_db.m
 %       digElectrodes.m
+%
+%
+% Created by: 
+%   Allison Pearce
+%   Litt Lab - University of Pennsylvania
+%   June 2011
+%   last updated July 2012
+% Based on original script by John Wu, PICSL, University of Pennsylvania
+
 % -------------------------------------------------------------------------
 
 
@@ -59,19 +67,19 @@
 % template
 
 % (short) patient name/id
-ptName = 'hup72';
+ptName = 'hup70';
 
 % Location of 3DVis directory
 vispath='/mnt/local/gdrive/public/3DVis';
 
 % Location of input-output diretory (no trailing filesep)
-in_out='/mnt/local/gdrive/public/pearce/side_projects/3DVis/hup72';
+in_out='/mnt/local/gdrive/public/pearce/hup70';
 
 % Pre-resection patient T1 MR image (high resolution) (nii.gz)
-T1='mri72';
+T1='mri70';
 
 % CT image with electrodes (nii.gz)
-CT='ct72';
+CT='ct70';
 
 % Post-resection patient T2 MR image (nii.gz)
 T2=[]; %'Mayo34_MRI_post';
@@ -96,7 +104,7 @@ unbury = 1;
 db = 1;
 
 % Clean up mode (set to '1' to delete intermediate files at end)
-cleanup = 1;
+cleanup = 0;
 
 % Intensity threshold for locating electrodes in CT. Assume that electrodes
 % have higher intensity than "electrode_thresh" and everything else is
@@ -209,7 +217,7 @@ fprintf('Done with rigid registration\n\n')
 if unbury
     % make sure electrodes aren't buried in tissue
     systemf_db(db, 'cp electrode_aligned.nii.gz electrodes_original.nii.gz'); % file is overwritten in next function
-    digElectrodes([T1path '_brain_mask.nii.gz'], ...
+    digElectrodes([ int_out filesep 'temp/' T1 '_brain_mask.nii.gz'], ... % CHECK THIS
         [in_out filesep 'temp/electrode_aligned.nii.gz']);
 end
 % combine electrodes with brain mask (no segmentation)
