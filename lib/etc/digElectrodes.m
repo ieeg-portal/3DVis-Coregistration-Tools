@@ -38,8 +38,6 @@ function [  ] = digElectrodes( brainPath, electrodePath )
 %-------------------------------------------------------------------------
 
 % unzip files and load image matrices
-fprintf('%s\n', pwd);
-! ls
 str = sprintf(['! gunzip ' brainPath]);
 eval(str);
 str = sprintf(['! gunzip ' electrodePath]);
@@ -50,7 +48,6 @@ bImg = bImg.img;
 fn_elec = char(regexp(electrodePath,'(\w+).nii.gz','tokens','once')); 
 e_nii = load_untouch_nii([fn_elec '.nii']);
 eImg = e_nii.img;
-
 if sum(size(bImg) == size(eImg)) ~= 3
     error(['size of brain mask not equal to size of electrode segmentation' ...
         ' >>> exiting']);
@@ -98,6 +95,7 @@ for e=1:econn.NumObjects
     for i = 1:size(new_xyz,1)
         eImg_out(new_xyz(i,1), new_xyz(i,2), new_xyz(i,3)) = 1;
     end
+   
 end    
 
 
@@ -109,8 +107,6 @@ eval(str);
 str = sprintf('! gzip %s.nii', fn_elec);
 eval(str);
 
+
 end
 
-
-%TODOs:
-% Make inputs optional for either filepath or matrix
