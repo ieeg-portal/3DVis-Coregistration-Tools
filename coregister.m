@@ -4,6 +4,7 @@
 %
 % OUTPUTS:
 %
+% {mriFilename}_brain.nii.gz: skull-stripped MRI  
 % pre_resection_electrode_seg.nii.gz: prior-based segmentation
 %       of pre-resection T1 image
 % post_resection_electrode_seg.nii.gz: segmentation file showing electrodes
@@ -92,7 +93,7 @@ resect = 0;
 unbury = 1;
 
 % Debug mode (set to '1' for command printouts)
-db = 0;
+db = 1;
 
 % Clean up mode (set to '1' to delete intermediate files at end)
 cleanup = 1;
@@ -111,6 +112,7 @@ electrode_thresh=2000;
 %-------------------------------------------------------------------------
 % OTHER INIT
 %--------------------------------------------------------------------------
+tic
 T1path = [in_out filesep 'temp' filesep T1];
 CTpath = [in_out filesep 'temp' filesep CT];
 if resect==1
@@ -153,9 +155,9 @@ if resect
 end
 cd temp
 
-%% ------------------------------------------------------------------------
+%-------------------------------------------------------------------------
 % MAIN
-% -------------------------------------------------------------------------
+%-------------------------------------------------------------------------
 
 % SKULL STRIPPING
 fprintf('\nRunning bet2 to strip the skull...\n')
@@ -216,15 +218,17 @@ if ~segment
         '2 %s_brain_mask.nii.gz -add -clip 0 2 -o ' ...
         '%s_electrode_seg.nii.gz >> %s'], ...
         T1path, ptName, log)
-    systemf_db(db, 'mv %s_electrode_seg.nii.gz %s/', ptName, in_out)
+    
 else
     % combine electrodes with T1 segmentation
     fprintf('Combining electrodes with T1 segmentation\n')
     systemf_db(db, ['c3d electrode_aligned.nii.gz -scale ' ...
         '40 seg35labels_prior0.5_mrf%g.nii.gz -add -clip 0 40 -o ' ...
         '%s_electrode_seg.nii.gz >> %s'], MRF_smoothness, ptName, log)    
-    systemf_db(db, 'mv %s_electrode_seg.nii.gz %s/', ptName,in_out)
+    
 end
+systemf_db(db, 'mv %s_electrode_seg.nii.gz %s/', ptName, in_out)
+systemf_db(db, 'mv %s_brain.nii.gz %s/', T1path, in_out)
 
 %% Post-resection
 if resect==1
@@ -256,7 +260,6 @@ if resect==1
         MRF_smoothness, resectionPath, ptName, log)
     fprintf('Done\n')
     systemf_db(db, 'mv %s_post_resection_seg.nii.gz  %s/', ptName, in_out)
-    systemf_db(db, 'mv %s_brain.nii.gz %s/', T1path, in_out)
 end
 
 cd ..

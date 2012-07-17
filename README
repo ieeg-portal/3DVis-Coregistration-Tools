@@ -1,7 +1,14 @@
 The 3DVis package provides a bundle for coregistering brain imaging data to create 3D reconstructions with electrode placement and labeled brain regions. 
 
-To install: clone the repository. Download and unzip all packages from the Downloads section and place them in the "lib" directory. Follow the initialization instructions found in Coregister.pdf in the "doc" folder.
+To install on 64-bit Linux: clone the repository. Download and unzip all packages from the Downloads section and place them in the "lib" directory. Follow the initialization instructions found in Coregister.pdf in the "doc" folder.
+
+Other platforms: Mac users will need to download the binaries for the external programs separately using the links below.
 
 This package contains many components of open source, freely available software that I did not develop, but they are included in the package for ease of use and installation. They are provided subject to the terms of their licenses. For more information about individual components, please see the documentation or visit the original developers' websites.
 
-FSL: <a href="http://www.fmrib.ox.ac.uk/fsldownloads/" target="_blank">License</a>
+ANTs Home Page: http://www.picsl.upenn.edu/ANTS/
+FSL License: http://www.fmrib.ox.ac.uk/fsl/fsl/licence.html
+FSL Home Page: http://www.fmrib.ox.ac.uk/fsl/index.html
+MRIcron License: http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html
+MRIcron dcm2nii Home Page: http://www.mccauslandcenter.sc.edu/mricro/mricron/dcm2nii.html 
+NifTI and ANALYZE Tools for MATLAB: http://www.mathworks.com/matlabcentral/fileexchange/8797
