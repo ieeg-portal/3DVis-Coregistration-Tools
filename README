@@ -1,4 +1,4 @@
-The 3DVis package provides a bundle for coregistering brain imaging data to create 3D reconstructions with electrode placement and labeled brain regions. 
+The 3DVis package provides a bundle for coregistering brain imaging data to create 3D reconstructions with electrode placement and labeled brain regions. It is distributed under the GNU General Public License: http://opensource.org/licenses/gpl-3.0.html. Any results published using this package should cite ?
 
 This package contains many components of open source, freely available software included for ease of use and installation. They are provided subject to the terms of their licenses. For more information about individual components, please see the documentation or visit the original developers' websites.
 
