@@ -66,10 +66,10 @@ The Coregister combines a T1\footnote{T1is preferred and more commonly used than
 \textbf{64-Bit Linux}: All binaries, functions, and files necessary to run the Coregister script on are already included in the package. Nothing needs to be installed, but the user will have to add the appropriate directories to the path before running the script for the first time. \\
 \textbf{Step 1} Open a terminal window\\
 \textbf{Step 2} Navigate to the \texttt{util} directory inside the 3DVis folder\\
-\textbf{Step 3} Type the following command exactly as written\footnote{If you are not using the 3DVis directory found in the public folder of Fourier, this path can be determined by navigating to the 3DVis directory within the terminal and typing \texttt{pwd}.}. This ensures that the appropriate directories are accessible each time you log in.
+\textbf{Step 3} For Litt Lab Fourier users, type the following command exactly as written. If you are not using the 3DVis directory found in the public folder of Fourier, this path can be determined by navigating to the 3DVis directory within the terminal and typing \texttt{pwd}. This ensures that the appropriate directories are accessible each time you log in.
 
 \begin{verb}
-  sed `1 i VISPATH=\mnt\local\gdrive\public\3DVis' init.txt >> ~/.bash_profile
+  sed `1 i VISPATH=/mnt/local/gdrive/public/3DVis' init.txt >> ~/.bash_profile
 \end{verb}
 
 \textbf{Step 3} Type the following command to set the paths for the current session without having to log out and back in. 
