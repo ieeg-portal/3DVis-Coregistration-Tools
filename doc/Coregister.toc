@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Package Contents}{3}
+\contentsline {section}{\numberline {3}Initial Configuration}{4}
+\contentsline {section}{\numberline {4}Converting Images from 2D DICOM or JPEG to 3D NIfTI}{4}
+\contentsline {section}{\numberline {5}Explanation of coregister.m}{6}
+\contentsline {subsection}{\numberline {5.1}User Input}{6}
+\contentsline {subsection}{\numberline {5.2}Init}{7}
+\contentsline {subsection}{\numberline {5.3}Main}{7}
+\contentsline {paragraph}{Skull Stripping}{7}
+\contentsline {paragraph}{Non-Rigid Warping}{7}
+\contentsline {paragraph}{Prior-Based Segmentation on Warped Labels}{7}
+\contentsline {paragraph}{CT Alignment and Electrode Extraction}{8}
+\contentsline {paragraph}{Post-Resection Alignment}{8}
+\contentsline {paragraph}{Clean Up}{8}
+\contentsline {subsection}{\numberline {5.4}Outputs}{8}
+\contentsline {section}{\numberline {6}Running the Script}{8}
+\contentsline {section}{\numberline {7}Viewing the Output in ITK-SNAP}{9}
+\contentsline {subsection}{\numberline {7.1}Loading Images from the GUI}{9}
+\contentsline {subsection}{\numberline {7.2}Loading Images from the Command Line}{10}
+\contentsline {subsection}{\numberline {7.3}Labels File Options}{10}
+\contentsline {subsection}{\numberline {7.4}Using the Toolboxes}{11}
+\contentsline {section}{\numberline {8}Troubleshooting}{11}
+\contentsline {subsection}{\numberline {8.1}Electrode Wires and Visual Noise}{11}
+\contentsline {subsection}{\numberline {8.2}Electrodes Not Visible or Missing}{12}
+\contentsline {subsection}{\numberline {8.3}Neck Still Attached to Brain}{13}
+\contentsline {section}{\numberline {9}Acknowledgements}{13}
+\contentsline {section}{Appendix B: Using Screens}{13}
+\contentsline {section}{Appendix B: Marking the Resected Region}{14}
+\contentsline {section}{Appendix C: About digElectrodes.m}{15}

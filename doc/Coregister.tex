@@ -21,7 +21,7 @@ showstringspaces=false,}
 
 \title{3D Visualization Tools Documentation}
 \author{Allison Pearce\\Translational Neuroengineering Lab\\University of Pennsylvania}
-\date{Updated July 2012}                                           
+\date{Updated August 2012}                                           
 
 
 \begin{document}
@@ -85,7 +85,7 @@ The Coregister combines a T1\footnote{T1is preferred and more commonly used than
 The script requires that the template, T1, and CT images be in compressed 3D NIfTI format (.nii.gz). Sometimes clinicians provide the data in the form of a series of 2D DICOM (.dcm) or JPEG (.jpg) files, which must essentially be stacked into a 3D image. The tools needed to convert both formats are included in this package.
 
 \subsection*{DICOM}
-If there are multiple pre-implant MRI studies, it is best to choose the one corresponding to the largest number of DICOMs to produce the highest resolution NIfTI output. You will need a DICOM viewer such as Osirix (http://www.osirix-viewer.com/) to import images from a disk to your computer. You can then use MRICron's dcm2nii tool: \\
+If there are multiple pre-implant MRI studies, it is best to choose the one corresponding to the largest number of DICOMs to produce the highest resolution NIfTI output. You will need a DICOM viewer such as Osirix (http://www.osirix-viewer.com/) to import images from a disk to your computer. You can then use MRICron's dcm2nii tool\footnote{You can change certain options for the dcm2nii tool, including those for anonymizing the output, by opening and editing the file ``.dcm2nii/dcm2nii.ini".  See the dcm2nii online documentation: http://www.mccauslandcenter.sc.edu/mricro/mricron/dcm2nii.html.} : \\
 \textbf{Step 1} Make sure all of the .dcm files are in the same folder. \\
 \textbf{Step 2} Navigate to the folder where you would like your .nii.gz file to be generated, and type ``dcm2nii" followed by the path to one of the 2D Dicom images. For example, 
 
@@ -93,7 +93,7 @@ If there are multiple pre-implant MRI studies, it is best to choose the one corr
   dcm2nii ~/gDir/3DVis/images/Pt-001/MRI/IMG-0001a2002.dcm 
 \end{verb}
 
-The program should search the directory of the input image for all similar files and combine them into a 3D image.\footnote{You can change certain options for the dcm2nii tool by opening and editing the file ``.dcm2nii/dcm2nii.ini".  See the dcm2nii online documentation: http://www.mccauslandcenter.sc.edu/mricro/mricron/dcm2nii.html.} Depending on the settings, more than one .nii.gz file might be created. The file that begins with ``co'' (e.g. \texttt{coMSEL397s003a1001.nii.gz}) is the cropped, oriented image that should be used in Coregister. If there is no ``co" file, use the file beginning with ``o" (this means that the image did not need to be cropped, only oriented.)
+The program should search the directory of the input image for all similar files and combine them into a 3D image. Depending on the settings, more than one .nii.gz file might be created. The file that begins with ``co'' (e.g. \texttt{coMSEL397s003a1001.nii.gz}) is the cropped, oriented image that should be used in Coregister. If there is no ``co" file, use the file beginning with ``o" (this means that the image did not need to be cropped, only oriented.)
 
 \subsection*{JPEG}
 High quality reconstructions are difficult to achieve with JPEG data and it is not recommended for this process, but it can be converted using ITK's TileImageFilter:\\
@@ -279,6 +279,6 @@ A binary mask for the resected region is required to delineate this area in the 
 
 \section*{Appedix C: About digElectrodes.m}
 \addcontentsline{toc}{section}{Appendix C: About digElectrodes.m}
-Coming soon.
+The digElectrodes tool was created to solve the problem of electrodes occasionally being buried beneath brain tissue in the final segmentation. It is called automatically from the script when the \texttt{unbury} option is set to 1. It can also be used independently of the script. The MATLAB function takes as input the file paths to two 3D binary images: the first is a brain mask and the second is the set of electrodes extracted from the CT scan. Both are created as intermediate files during the coregistration process. Using a few simple calculations, the algorithm determines the magnitude and direction of a shift necessary to place the center of mass of each electrode on the outside surface of the brain. It then translates all voxels in that electrode by the calculated amount. This version cannot distinguish between depth and surface electrodes, so using the function on data with depth electrodes will result in strange and serious errors in the final segmentation. 
 
 \end{document}  
