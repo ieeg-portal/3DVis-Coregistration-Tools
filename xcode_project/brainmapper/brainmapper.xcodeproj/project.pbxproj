@@ -13,6 +13,8 @@
 		C8CDF37F164809AA00BC4F9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF37D164809AA00BC4F9C /* Credits.rtf */; };
 		C8CDF382164809AA00BC4F9C /* BRMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */; };
 		C8CDF385164809AB00BC4F9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF383164809AB00BC4F9C /* MainMenu.xib */; };
+		C8E34428164964C300A42105 /* BRM_Dataset.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E34427164964C300A42105 /* BRM_Dataset.m */; };
+		C8E3442C16497EA000A42105 /* BRM_AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E3442B16497EA000A42105 /* BRM_AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		C8CDF380164809AA00BC4F9C /* BRMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMAppDelegate.h; sourceTree = "<group>"; };
 		C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRMAppDelegate.m; sourceTree = "<group>"; };
 		C8CDF384164809AB00BC4F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C8E34426164964C300A42105 /* BRM_Dataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRM_Dataset.h; sourceTree = "<group>"; };
+		C8E34427164964C300A42105 /* BRM_Dataset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRM_Dataset.m; sourceTree = "<group>"; };
+		C8E3442A16497EA000A42105 /* BRM_AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRM_AppController.h; sourceTree = "<group>"; };
+		C8E3442B16497EA000A42105 /* BRM_AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRM_AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +88,14 @@
 		C8CDF374164809AA00BC4F9C /* brainmapper */ = {
 			isa = PBXGroup;
 			children = (
+				C8E3442A16497EA000A42105 /* BRM_AppController.h */,
+				C8E3442B16497EA000A42105 /* BRM_AppController.m */,
 				C8CDF380164809AA00BC4F9C /* BRMAppDelegate.h */,
 				C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */,
 				C8CDF383164809AB00BC4F9C /* MainMenu.xib */,
 				C8CDF375164809AA00BC4F9C /* Supporting Files */,
+				C8E34426164964C300A42105 /* BRM_Dataset.h */,
+				C8E34427164964C300A42105 /* BRM_Dataset.m */,
 			);
 			path = brainmapper;
 			sourceTree = "<group>";
@@ -169,6 +179,8 @@
 			files = (
 				C8CDF37B164809AA00BC4F9C /* main.m in Sources */,
 				C8CDF382164809AA00BC4F9C /* BRMAppDelegate.m in Sources */,
+				C8E34428164964C300A42105 /* BRM_Dataset.m in Sources */,
+				C8E3442C16497EA000A42105 /* BRM_AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,7 @@
 				C8CDF38A164809AB00BC4F9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
