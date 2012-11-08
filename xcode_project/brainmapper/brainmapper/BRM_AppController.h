@@ -11,8 +11,11 @@
 @interface BRM_AppController : NSObject
 {
     IBOutlet NSTextField *textField;
+    IBOutlet NSTableView *mriView;
+    IBOutlet NSTableView *ctView;
+    IBOutlet NSTextField *targetPath;
 }
 
 -(IBAction)start:(id)sender;
-
+-(IBAction)pickPath:(id)sender;
 @end
