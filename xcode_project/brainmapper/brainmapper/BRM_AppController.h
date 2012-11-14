@@ -13,9 +13,12 @@
     IBOutlet NSTextField *textField;
     IBOutlet NSTableView *mriView;
     IBOutlet NSTableView *ctView;
-    IBOutlet NSTextField *targetPath;
-}
+    IBOutlet NSPathControl *targetPath;
+    
+    NSMutableArray *mriArray;
+    NSMutableArray *ctArray;
 
--(IBAction)start:(id)sender;
--(IBAction)pickPath:(id)sender;
+}
+@property (copy) NSMutableArray *mriArray, *ctArray;
+
 @end

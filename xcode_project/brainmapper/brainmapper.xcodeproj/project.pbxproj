@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82BF0F9165187BF00A9D734 /* BRMDragDropTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BF0F8165187BF00A9D734 /* BRMDragDropTableView.m */; };
+		C88833B61651C54100C589AA /* ImageSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = C88833B51651C54100C589AA /* ImageSlice.m */; };
 		C8CDF36F164809AA00BC4F9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CDF36E164809AA00BC4F9C /* Cocoa.framework */; };
 		C8CDF379164809AA00BC4F9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF377164809AA00BC4F9C /* InfoPlist.strings */; };
 		C8CDF37B164809AA00BC4F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDF37A164809AA00BC4F9C /* main.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C82BF0F7165187BF00A9D734 /* BRMDragDropTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMDragDropTableView.h; sourceTree = "<group>"; };
+		C82BF0F8165187BF00A9D734 /* BRMDragDropTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMDragDropTableView.m; sourceTree = "<group>"; };
+		C88833B41651C54100C589AA /* ImageSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSlice.h; sourceTree = "<group>"; };
+		C88833B51651C54100C589AA /* ImageSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSlice.m; sourceTree = "<group>"; };
 		C8CDF36A164809AA00BC4F9C /* brainmapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brainmapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CDF36E164809AA00BC4F9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C8CDF371164809AA00BC4F9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -91,6 +97,10 @@
 				C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */,
 				C8CDF383164809AB00BC4F9C /* MainMenu.xib */,
 				C8CDF375164809AA00BC4F9C /* Supporting Files */,
+				C82BF0F7165187BF00A9D734 /* BRMDragDropTableView.h */,
+				C82BF0F8165187BF00A9D734 /* BRMDragDropTableView.m */,
+				C88833B41651C54100C589AA /* ImageSlice.h */,
+				C88833B51651C54100C589AA /* ImageSlice.m */,
 			);
 			path = brainmapper;
 			sourceTree = "<group>";
@@ -175,6 +185,8 @@
 				C8CDF37B164809AA00BC4F9C /* main.m in Sources */,
 				C8CDF382164809AA00BC4F9C /* BRMAppDelegate.m in Sources */,
 				C8E3442C16497EA000A42105 /* BRM_AppController.m in Sources */,
+				C82BF0F9165187BF00A9D734 /* BRMDragDropTableView.m in Sources */,
+				C88833B61651C54100C589AA /* ImageSlice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
