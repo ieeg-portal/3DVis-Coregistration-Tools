@@ -13,7 +13,6 @@
 		C8CDF379164809AA00BC4F9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF377164809AA00BC4F9C /* InfoPlist.strings */; };
 		C8CDF37B164809AA00BC4F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDF37A164809AA00BC4F9C /* main.m */; };
 		C8CDF37F164809AA00BC4F9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF37D164809AA00BC4F9C /* Credits.rtf */; };
-		C8CDF382164809AA00BC4F9C /* BRMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */; };
 		C8CDF385164809AB00BC4F9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDF383164809AB00BC4F9C /* MainMenu.xib */; };
 		C8E3442C16497EA000A42105 /* BRM_AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E3442B16497EA000A42105 /* BRM_AppController.m */; };
 /* End PBXBuildFile section */
@@ -32,8 +31,6 @@
 		C8CDF37A164809AA00BC4F9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8CDF37C164809AA00BC4F9C /* brainmapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brainmapper-Prefix.pch"; sourceTree = "<group>"; };
 		C8CDF37E164809AA00BC4F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C8CDF380164809AA00BC4F9C /* BRMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMAppDelegate.h; sourceTree = "<group>"; };
-		C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRMAppDelegate.m; sourceTree = "<group>"; };
 		C8CDF384164809AB00BC4F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C8E3442A16497EA000A42105 /* BRM_AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRM_AppController.h; sourceTree = "<group>"; };
 		C8E3442B16497EA000A42105 /* BRM_AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRM_AppController.m; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 			children = (
 				C8E3442A16497EA000A42105 /* BRM_AppController.h */,
 				C8E3442B16497EA000A42105 /* BRM_AppController.m */,
-				C8CDF380164809AA00BC4F9C /* BRMAppDelegate.h */,
-				C8CDF381164809AA00BC4F9C /* BRMAppDelegate.m */,
 				C8CDF383164809AB00BC4F9C /* MainMenu.xib */,
 				C8CDF375164809AA00BC4F9C /* Supporting Files */,
 				C82BF0F7165187BF00A9D734 /* BRMDragDropTableView.h */,
@@ -182,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8CDF37B164809AA00BC4F9C /* main.m in Sources */,
-				C8CDF382164809AA00BC4F9C /* BRMAppDelegate.m in Sources */,
 				C8E3442C16497EA000A42105 /* BRM_AppController.m in Sources */,
 				C82BF0F9165187BF00A9D734 /* BRMDragDropTableView.m in Sources */,
 			);

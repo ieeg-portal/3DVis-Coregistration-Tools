@@ -14,11 +14,15 @@
     IBOutlet NSTableView *mriView;
     IBOutlet NSTableView *ctView;
     IBOutlet NSPathControl *targetPath;
+    IBOutlet NSProgressIndicator *processInd;
     
     NSMutableArray *mriArray;
     NSMutableArray *ctArray;
+    Boolean hasDepth, inclSegm;
 
 }
 @property (copy) NSMutableArray *mriArray, *ctArray;
+@property (readwrite) Boolean hasDepth, inclSegm;
+
 
 @end
