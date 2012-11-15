@@ -75,10 +75,10 @@
     
     if(tableView==mriView){
     
-        return [mriArray count];
+        return (int)[mriArray count];
     }
     else if(tableView == ctView){
-        return [ctArray count];
+        return (int)[ctArray count];
     }
     else
     {
