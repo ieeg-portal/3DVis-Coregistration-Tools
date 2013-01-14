@@ -1,0 +1,14 @@
+%
+%--------------------------------------------------------------------------
+% FIRST USE ONLY 
+%--------------------------------------------------------------------------
+%
+% COPY THE FOLLOWING COMMANDS DIRECTLY INTO THE TERMINAL FROM WITHIN THE 
+% 3DVIS/UTIL DIRECTORY. REPLACE THE <insert path here> IN STEP 1 WITH THE
+% PATH TO THE 3DVIS DIRECTORY (THIS PATH SHOULD END WITH /3DVIS AND CAN BE 
+% DETERMINED BY NAVIGATING TO THE 3DVIS DIRECTORY FROM THE TERMINAL AND 
+% TYPING 'pwd'). 
+% 
+% 1) sed '1 i VISPATH=<insert path here>' init.txt >> ~/.bash_profile
+% 2) source ~/.bash_profile
+

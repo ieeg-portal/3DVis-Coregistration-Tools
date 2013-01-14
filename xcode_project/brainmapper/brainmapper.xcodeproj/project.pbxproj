@@ -7,6 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D9F83B169F3A7500296396 /* ANTSIntegrateVectorField in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F809169F3A7500296396 /* ANTSIntegrateVectorField */; };
+		09D9F83C169F3A7500296396 /* ANTSIntegrateVelocityField in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F80A169F3A7500296396 /* ANTSIntegrateVelocityField */; };
+		09D9F83D169F3A7500296396 /* antsIntroduction.sh in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F80B169F3A7500296396 /* antsIntroduction.sh */; };
+		09D9F83E169F3A7500296396 /* ANTSJacobian in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F80C169F3A7500296396 /* ANTSJacobian */; };
+		09D9F83F169F3A7500296396 /* ANTSUseDeformationFieldToGetAffineTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F80D169F3A7500296396 /* ANTSUseDeformationFieldToGetAffineTransform */; };
+		09D9F840169F3A7500296396 /* ANTSUseLandmarkImagesToGetAffineTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F80E169F3A7500296396 /* ANTSUseLandmarkImagesToGetAffineTransform */; };
+		09D9F842169F3A7500296396 /* AverageImages in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F810169F3A7500296396 /* AverageImages */; };
+		09D9F843169F3A7500296396 /* AverageTensorImages in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F811169F3A7500296396 /* AverageTensorImages */; };
+		09D9F844169F3A7500296396 /* ClusterImageStatistics in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F812169F3A7500296396 /* ClusterImageStatistics */; };
+		09D9F845169F3A7500296396 /* ComposeMultiTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F813169F3A7500296396 /* ComposeMultiTransform */; };
+		09D9F846169F3A7500296396 /* ConvertImagePixelType in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F814169F3A7500296396 /* ConvertImagePixelType */; };
+		09D9F847169F3A7500296396 /* ConvertScalarImageToRGB in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F815169F3A7500296396 /* ConvertScalarImageToRGB */; };
+		09D9F848169F3A7500296396 /* ConvertToJpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F816169F3A7500296396 /* ConvertToJpg */; };
+		09D9F849169F3A7500296396 /* CopyImageHeaderInformation in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F817169F3A7500296396 /* CopyImageHeaderInformation */; };
+		09D9F84A169F3A7500296396 /* CreateImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F818169F3A7500296396 /* CreateImage */; };
+		09D9F84B169F3A7500296396 /* CreateWarpedGridImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F819169F3A7500296396 /* CreateWarpedGridImage */; };
+		09D9F84C169F3A7500296396 /* ExtractSliceFromImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81A169F3A7500296396 /* ExtractSliceFromImage */; };
+		09D9F84D169F3A7500296396 /* ImageCompare in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81B169F3A7500296396 /* ImageCompare */; };
+		09D9F84E169F3A7500296396 /* ImageMath in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81C169F3A7500296396 /* ImageMath */; };
+		09D9F84F169F3A7500296396 /* ImageSetStatistics in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81D169F3A7500296396 /* ImageSetStatistics */; };
+		09D9F850169F3A7500296396 /* KellyKapowski in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81E169F3A7500296396 /* KellyKapowski */; };
+		09D9F851169F3A7500296396 /* KellySlater in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F81F169F3A7500296396 /* KellySlater */; };
+		09D9F852169F3A7500296396 /* LabelClustersUniquely in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F820169F3A7500296396 /* LabelClustersUniquely */; };
+		09D9F853169F3A7500296396 /* LabelOverlapMeasures in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F821169F3A7500296396 /* LabelOverlapMeasures */; };
+		09D9F854169F3A7500296396 /* LaplacianThickness in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F822169F3A7500296396 /* LaplacianThickness */; };
+		09D9F855169F3A7500296396 /* MeasureImageSimilarity in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F823169F3A7500296396 /* MeasureImageSimilarity */; };
+		09D9F856169F3A7500296396 /* MeasureMinMaxMean in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F824169F3A7500296396 /* MeasureMinMaxMean */; };
+		09D9F857169F3A7500296396 /* MultiplyImages in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F825169F3A7500296396 /* MultiplyImages */; };
+		09D9F858169F3A7500296396 /* N3BiasFieldCorrection in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F826169F3A7500296396 /* N3BiasFieldCorrection */; };
+		09D9F859169F3A7500296396 /* N4BiasFieldCorrection in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F827169F3A7500296396 /* N4BiasFieldCorrection */; };
+		09D9F85A169F3A7500296396 /* PermuteFlipImageOrientationAxes in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F828169F3A7500296396 /* PermuteFlipImageOrientationAxes */; };
+		09D9F85B169F3A7500296396 /* PrintHeader in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F829169F3A7500296396 /* PrintHeader */; };
+		09D9F85C169F3A7500296396 /* ReorientTensorImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82A169F3A7500296396 /* ReorientTensorImage */; };
+		09D9F85D169F3A7500296396 /* ResampleImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82B169F3A7500296396 /* ResampleImage */; };
+		09D9F85E169F3A7500296396 /* ResampleImageBySpacing in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82C169F3A7500296396 /* ResampleImageBySpacing */; };
+		09D9F85F169F3A7500296396 /* ResetDirection in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82D169F3A7500296396 /* ResetDirection */; };
+		09D9F860169F3A7500296396 /* SetDirectionByMatrix in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82E169F3A7500296396 /* SetDirectionByMatrix */; };
+		09D9F861169F3A7500296396 /* SetOrigin in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F82F169F3A7500296396 /* SetOrigin */; };
+		09D9F862169F3A7500296396 /* SetSpacing in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F830169F3A7500296396 /* SetSpacing */; };
+		09D9F863169F3A7500296396 /* SmoothImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F831169F3A7500296396 /* SmoothImage */; };
+		09D9F864169F3A7500296396 /* StackSlices in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F832169F3A7500296396 /* StackSlices */; };
+		09D9F865169F3A7500296396 /* SurfaceBasedSmoothing in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F833169F3A7500296396 /* SurfaceBasedSmoothing */; };
+		09D9F866169F3A7500296396 /* SurfaceCurvature in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F834169F3A7500296396 /* SurfaceCurvature */; };
+		09D9F867169F3A7500296396 /* ThresholdImage in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F835169F3A7500296396 /* ThresholdImage */; };
+		09D9F868169F3A7500296396 /* TileImages in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F836169F3A7500296396 /* TileImages */; };
+		09D9F869169F3A7500296396 /* WarpImageMultiTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F837169F3A7500296396 /* WarpImageMultiTransform */; };
+		09D9F86A169F3A7500296396 /* WarpTensorImageMultiTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F838169F3A7500296396 /* WarpTensorImageMultiTransform */; };
+		09D9F86B169F3A7500296396 /* WarpTimeSeriesImageMultiTransform in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F839169F3A7500296396 /* WarpTimeSeriesImageMultiTransform */; };
+		09D9F86D169F3B0300296396 /* Atropos in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F86F169F3B0300296396 /* Atropos */; };
+		09D9F870169F3B1600296396 /* ANTS in Resources */ = {isa = PBXBuildFile; fileRef = 09D9F872169F3B1600296396 /* ANTS */; };
+		09EECA561692860B001FD8C7 /* antsIntroduction.sh in Resources */ = {isa = PBXBuildFile; fileRef = 09EECA521692860B001FD8C7 /* antsIntroduction.sh */; };
+		09EECA571692860B001FD8C7 /* coregister.sh in Resources */ = {isa = PBXBuildFile; fileRef = 09EECA531692860B001FD8C7 /* coregister.sh */; };
 		C82BF0F9165187BF00A9D734 /* BRMDragDropTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BF0F8165187BF00A9D734 /* BRMDragDropTableView.m */; };
 		C873BCC516552C65000E599B /* helpfiles in Resources */ = {isa = PBXBuildFile; fileRef = C873BCC416552C65000E599B /* helpfiles */; };
 		C8CDF36F164809AA00BC4F9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CDF36E164809AA00BC4F9C /* Cocoa.framework */; };
@@ -18,6 +70,59 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D9F809169F3A7500296396 /* ANTSIntegrateVectorField */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANTSIntegrateVectorField; sourceTree = "<group>"; };
+		09D9F80A169F3A7500296396 /* ANTSIntegrateVelocityField */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANTSIntegrateVelocityField; sourceTree = "<group>"; };
+		09D9F80B169F3A7500296396 /* antsIntroduction.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = antsIntroduction.sh; sourceTree = "<group>"; };
+		09D9F80C169F3A7500296396 /* ANTSJacobian */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANTSJacobian; sourceTree = "<group>"; };
+		09D9F80D169F3A7500296396 /* ANTSUseDeformationFieldToGetAffineTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANTSUseDeformationFieldToGetAffineTransform; sourceTree = "<group>"; };
+		09D9F80E169F3A7500296396 /* ANTSUseLandmarkImagesToGetAffineTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANTSUseLandmarkImagesToGetAffineTransform; sourceTree = "<group>"; };
+		09D9F810169F3A7500296396 /* AverageImages */ = {isa = PBXFileReference; lastKnownFileType = file; path = AverageImages; sourceTree = "<group>"; };
+		09D9F811169F3A7500296396 /* AverageTensorImages */ = {isa = PBXFileReference; lastKnownFileType = file; path = AverageTensorImages; sourceTree = "<group>"; };
+		09D9F812169F3A7500296396 /* ClusterImageStatistics */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClusterImageStatistics; sourceTree = "<group>"; };
+		09D9F813169F3A7500296396 /* ComposeMultiTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComposeMultiTransform; sourceTree = "<group>"; };
+		09D9F814169F3A7500296396 /* ConvertImagePixelType */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConvertImagePixelType; sourceTree = "<group>"; };
+		09D9F815169F3A7500296396 /* ConvertScalarImageToRGB */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConvertScalarImageToRGB; sourceTree = "<group>"; };
+		09D9F816169F3A7500296396 /* ConvertToJpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConvertToJpg; sourceTree = "<group>"; };
+		09D9F817169F3A7500296396 /* CopyImageHeaderInformation */ = {isa = PBXFileReference; lastKnownFileType = file; path = CopyImageHeaderInformation; sourceTree = "<group>"; };
+		09D9F818169F3A7500296396 /* CreateImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = CreateImage; sourceTree = "<group>"; };
+		09D9F819169F3A7500296396 /* CreateWarpedGridImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = CreateWarpedGridImage; sourceTree = "<group>"; };
+		09D9F81A169F3A7500296396 /* ExtractSliceFromImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtractSliceFromImage; sourceTree = "<group>"; };
+		09D9F81B169F3A7500296396 /* ImageCompare */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageCompare; sourceTree = "<group>"; };
+		09D9F81C169F3A7500296396 /* ImageMath */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageMath; sourceTree = "<group>"; };
+		09D9F81D169F3A7500296396 /* ImageSetStatistics */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageSetStatistics; sourceTree = "<group>"; };
+		09D9F81E169F3A7500296396 /* KellyKapowski */ = {isa = PBXFileReference; lastKnownFileType = file; path = KellyKapowski; sourceTree = "<group>"; };
+		09D9F81F169F3A7500296396 /* KellySlater */ = {isa = PBXFileReference; lastKnownFileType = file; path = KellySlater; sourceTree = "<group>"; };
+		09D9F820169F3A7500296396 /* LabelClustersUniquely */ = {isa = PBXFileReference; lastKnownFileType = file; path = LabelClustersUniquely; sourceTree = "<group>"; };
+		09D9F821169F3A7500296396 /* LabelOverlapMeasures */ = {isa = PBXFileReference; lastKnownFileType = file; path = LabelOverlapMeasures; sourceTree = "<group>"; };
+		09D9F822169F3A7500296396 /* LaplacianThickness */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaplacianThickness; sourceTree = "<group>"; };
+		09D9F823169F3A7500296396 /* MeasureImageSimilarity */ = {isa = PBXFileReference; lastKnownFileType = file; path = MeasureImageSimilarity; sourceTree = "<group>"; };
+		09D9F824169F3A7500296396 /* MeasureMinMaxMean */ = {isa = PBXFileReference; lastKnownFileType = file; path = MeasureMinMaxMean; sourceTree = "<group>"; };
+		09D9F825169F3A7500296396 /* MultiplyImages */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultiplyImages; sourceTree = "<group>"; };
+		09D9F826169F3A7500296396 /* N3BiasFieldCorrection */ = {isa = PBXFileReference; lastKnownFileType = file; path = N3BiasFieldCorrection; sourceTree = "<group>"; };
+		09D9F827169F3A7500296396 /* N4BiasFieldCorrection */ = {isa = PBXFileReference; lastKnownFileType = file; path = N4BiasFieldCorrection; sourceTree = "<group>"; };
+		09D9F828169F3A7500296396 /* PermuteFlipImageOrientationAxes */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermuteFlipImageOrientationAxes; sourceTree = "<group>"; };
+		09D9F829169F3A7500296396 /* PrintHeader */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrintHeader; sourceTree = "<group>"; };
+		09D9F82A169F3A7500296396 /* ReorientTensorImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReorientTensorImage; sourceTree = "<group>"; };
+		09D9F82B169F3A7500296396 /* ResampleImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = ResampleImage; sourceTree = "<group>"; };
+		09D9F82C169F3A7500296396 /* ResampleImageBySpacing */ = {isa = PBXFileReference; lastKnownFileType = file; path = ResampleImageBySpacing; sourceTree = "<group>"; };
+		09D9F82D169F3A7500296396 /* ResetDirection */ = {isa = PBXFileReference; lastKnownFileType = file; path = ResetDirection; sourceTree = "<group>"; };
+		09D9F82E169F3A7500296396 /* SetDirectionByMatrix */ = {isa = PBXFileReference; lastKnownFileType = file; path = SetDirectionByMatrix; sourceTree = "<group>"; };
+		09D9F82F169F3A7500296396 /* SetOrigin */ = {isa = PBXFileReference; lastKnownFileType = file; path = SetOrigin; sourceTree = "<group>"; };
+		09D9F830169F3A7500296396 /* SetSpacing */ = {isa = PBXFileReference; lastKnownFileType = file; path = SetSpacing; sourceTree = "<group>"; };
+		09D9F831169F3A7500296396 /* SmoothImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmoothImage; sourceTree = "<group>"; };
+		09D9F832169F3A7500296396 /* StackSlices */ = {isa = PBXFileReference; lastKnownFileType = file; path = StackSlices; sourceTree = "<group>"; };
+		09D9F833169F3A7500296396 /* SurfaceBasedSmoothing */ = {isa = PBXFileReference; lastKnownFileType = file; path = SurfaceBasedSmoothing; sourceTree = "<group>"; };
+		09D9F834169F3A7500296396 /* SurfaceCurvature */ = {isa = PBXFileReference; lastKnownFileType = file; path = SurfaceCurvature; sourceTree = "<group>"; };
+		09D9F835169F3A7500296396 /* ThresholdImage */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThresholdImage; sourceTree = "<group>"; };
+		09D9F836169F3A7500296396 /* TileImages */ = {isa = PBXFileReference; lastKnownFileType = file; path = TileImages; sourceTree = "<group>"; };
+		09D9F837169F3A7500296396 /* WarpImageMultiTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = WarpImageMultiTransform; sourceTree = "<group>"; };
+		09D9F838169F3A7500296396 /* WarpTensorImageMultiTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = WarpTensorImageMultiTransform; sourceTree = "<group>"; };
+		09D9F839169F3A7500296396 /* WarpTimeSeriesImageMultiTransform */ = {isa = PBXFileReference; lastKnownFileType = file; path = WarpTimeSeriesImageMultiTransform; sourceTree = "<group>"; };
+		09D9F86E169F3B0300296396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Atropos; sourceTree = "<group>"; };
+		09D9F871169F3B1600296396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/ANTS; sourceTree = "<group>"; };
+		09EECA491691295F001FD8C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = en; path = en.lproj/dcm2nii; sourceTree = "<group>"; };
+		09EECA521692860B001FD8C7 /* antsIntroduction.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = antsIntroduction.sh; sourceTree = "<group>"; };
+		09EECA531692860B001FD8C7 /* coregister.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = coregister.sh; sourceTree = "<group>"; };
 		C82BF0F7165187BF00A9D734 /* BRMDragDropTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMDragDropTableView.h; sourceTree = "<group>"; };
 		C82BF0F8165187BF00A9D734 /* BRMDragDropTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMDragDropTableView.m; sourceTree = "<group>"; };
 		C873BCC416552C65000E599B /* helpfiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = helpfiles; sourceTree = "<group>"; };
@@ -48,9 +153,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D9F807169F3A7500296396 /* ants-bin */ = {
+			isa = PBXGroup;
+			children = (
+				09D9F872169F3B1600296396 /* ANTS */,
+				09D9F809169F3A7500296396 /* ANTSIntegrateVectorField */,
+				09D9F80A169F3A7500296396 /* ANTSIntegrateVelocityField */,
+				09D9F80B169F3A7500296396 /* antsIntroduction.sh */,
+				09D9F80C169F3A7500296396 /* ANTSJacobian */,
+				09D9F80D169F3A7500296396 /* ANTSUseDeformationFieldToGetAffineTransform */,
+				09D9F80E169F3A7500296396 /* ANTSUseLandmarkImagesToGetAffineTransform */,
+				09D9F86F169F3B0300296396 /* Atropos */,
+				09D9F810169F3A7500296396 /* AverageImages */,
+				09D9F811169F3A7500296396 /* AverageTensorImages */,
+				09D9F812169F3A7500296396 /* ClusterImageStatistics */,
+				09D9F813169F3A7500296396 /* ComposeMultiTransform */,
+				09D9F814169F3A7500296396 /* ConvertImagePixelType */,
+				09D9F815169F3A7500296396 /* ConvertScalarImageToRGB */,
+				09D9F816169F3A7500296396 /* ConvertToJpg */,
+				09D9F817169F3A7500296396 /* CopyImageHeaderInformation */,
+				09D9F818169F3A7500296396 /* CreateImage */,
+				09D9F819169F3A7500296396 /* CreateWarpedGridImage */,
+				09D9F81A169F3A7500296396 /* ExtractSliceFromImage */,
+				09D9F81B169F3A7500296396 /* ImageCompare */,
+				09D9F81C169F3A7500296396 /* ImageMath */,
+				09D9F81D169F3A7500296396 /* ImageSetStatistics */,
+				09D9F81E169F3A7500296396 /* KellyKapowski */,
+				09D9F81F169F3A7500296396 /* KellySlater */,
+				09D9F820169F3A7500296396 /* LabelClustersUniquely */,
+				09D9F821169F3A7500296396 /* LabelOverlapMeasures */,
+				09D9F822169F3A7500296396 /* LaplacianThickness */,
+				09D9F823169F3A7500296396 /* MeasureImageSimilarity */,
+				09D9F824169F3A7500296396 /* MeasureMinMaxMean */,
+				09D9F825169F3A7500296396 /* MultiplyImages */,
+				09D9F826169F3A7500296396 /* N3BiasFieldCorrection */,
+				09D9F827169F3A7500296396 /* N4BiasFieldCorrection */,
+				09D9F828169F3A7500296396 /* PermuteFlipImageOrientationAxes */,
+				09D9F829169F3A7500296396 /* PrintHeader */,
+				09D9F82A169F3A7500296396 /* ReorientTensorImage */,
+				09D9F82B169F3A7500296396 /* ResampleImage */,
+				09D9F82C169F3A7500296396 /* ResampleImageBySpacing */,
+				09D9F82D169F3A7500296396 /* ResetDirection */,
+				09D9F82E169F3A7500296396 /* SetDirectionByMatrix */,
+				09D9F82F169F3A7500296396 /* SetOrigin */,
+				09D9F830169F3A7500296396 /* SetSpacing */,
+				09D9F831169F3A7500296396 /* SmoothImage */,
+				09D9F832169F3A7500296396 /* StackSlices */,
+				09D9F833169F3A7500296396 /* SurfaceBasedSmoothing */,
+				09D9F834169F3A7500296396 /* SurfaceCurvature */,
+				09D9F835169F3A7500296396 /* ThresholdImage */,
+				09D9F836169F3A7500296396 /* TileImages */,
+				09D9F837169F3A7500296396 /* WarpImageMultiTransform */,
+				09D9F838169F3A7500296396 /* WarpTensorImageMultiTransform */,
+				09D9F839169F3A7500296396 /* WarpTimeSeriesImageMultiTransform */,
+			);
+			name = "ants-bin";
+			path = "../mac64_lib/ants-bin";
+			sourceTree = "<group>";
+		};
+		09EECA451691256F001FD8C7 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				09D9F807169F3A7500296396 /* ants-bin */,
+				09EECA4A1691295F001FD8C7 /* dcm2nii */,
+			);
+			name = bin;
+			path = brainmapper/bin;
+			sourceTree = "<group>";
+		};
+		09EECA4F1692860B001FD8C7 /* sh */ = {
+			isa = PBXGroup;
+			children = (
+				09EECA521692860B001FD8C7 /* antsIntroduction.sh */,
+				09EECA531692860B001FD8C7 /* coregister.sh */,
+			);
+			path = sh;
+			sourceTree = "<group>";
+		};
 		C8CDF35F164809AA00BC4F9C = {
 			isa = PBXGroup;
 			children = (
+				09EECA4F1692860B001FD8C7 /* sh */,
+				09EECA451691256F001FD8C7 /* bin */,
 				C8CDF374164809AA00BC4F9C /* brainmapper */,
 				C8CDF36D164809AA00BC4F9C /* Frameworks */,
 				C8CDF36B164809AA00BC4F9C /* Products */,
@@ -166,6 +350,58 @@
 				C8CDF37F164809AA00BC4F9C /* Credits.rtf in Resources */,
 				C8CDF385164809AB00BC4F9C /* MainMenu.xib in Resources */,
 				C873BCC516552C65000E599B /* helpfiles in Resources */,
+				09EECA561692860B001FD8C7 /* antsIntroduction.sh in Resources */,
+				09EECA571692860B001FD8C7 /* coregister.sh in Resources */,
+				09D9F870169F3B1600296396 /* ANTS in Resources */,
+				09D9F83B169F3A7500296396 /* ANTSIntegrateVectorField in Resources */,
+				09D9F83C169F3A7500296396 /* ANTSIntegrateVelocityField in Resources */,
+				09D9F83D169F3A7500296396 /* antsIntroduction.sh in Resources */,
+				09D9F83E169F3A7500296396 /* ANTSJacobian in Resources */,
+				09D9F83F169F3A7500296396 /* ANTSUseDeformationFieldToGetAffineTransform in Resources */,
+				09D9F840169F3A7500296396 /* ANTSUseLandmarkImagesToGetAffineTransform in Resources */,
+				09D9F86D169F3B0300296396 /* Atropos in Resources */,
+				09D9F842169F3A7500296396 /* AverageImages in Resources */,
+				09D9F843169F3A7500296396 /* AverageTensorImages in Resources */,
+				09D9F844169F3A7500296396 /* ClusterImageStatistics in Resources */,
+				09D9F845169F3A7500296396 /* ComposeMultiTransform in Resources */,
+				09D9F846169F3A7500296396 /* ConvertImagePixelType in Resources */,
+				09D9F847169F3A7500296396 /* ConvertScalarImageToRGB in Resources */,
+				09D9F848169F3A7500296396 /* ConvertToJpg in Resources */,
+				09D9F849169F3A7500296396 /* CopyImageHeaderInformation in Resources */,
+				09D9F84A169F3A7500296396 /* CreateImage in Resources */,
+				09D9F84B169F3A7500296396 /* CreateWarpedGridImage in Resources */,
+				09D9F84C169F3A7500296396 /* ExtractSliceFromImage in Resources */,
+				09D9F84D169F3A7500296396 /* ImageCompare in Resources */,
+				09D9F84E169F3A7500296396 /* ImageMath in Resources */,
+				09D9F84F169F3A7500296396 /* ImageSetStatistics in Resources */,
+				09D9F850169F3A7500296396 /* KellyKapowski in Resources */,
+				09D9F851169F3A7500296396 /* KellySlater in Resources */,
+				09D9F852169F3A7500296396 /* LabelClustersUniquely in Resources */,
+				09D9F853169F3A7500296396 /* LabelOverlapMeasures in Resources */,
+				09D9F854169F3A7500296396 /* LaplacianThickness in Resources */,
+				09D9F855169F3A7500296396 /* MeasureImageSimilarity in Resources */,
+				09D9F856169F3A7500296396 /* MeasureMinMaxMean in Resources */,
+				09D9F857169F3A7500296396 /* MultiplyImages in Resources */,
+				09D9F858169F3A7500296396 /* N3BiasFieldCorrection in Resources */,
+				09D9F859169F3A7500296396 /* N4BiasFieldCorrection in Resources */,
+				09D9F85A169F3A7500296396 /* PermuteFlipImageOrientationAxes in Resources */,
+				09D9F85B169F3A7500296396 /* PrintHeader in Resources */,
+				09D9F85C169F3A7500296396 /* ReorientTensorImage in Resources */,
+				09D9F85D169F3A7500296396 /* ResampleImage in Resources */,
+				09D9F85E169F3A7500296396 /* ResampleImageBySpacing in Resources */,
+				09D9F85F169F3A7500296396 /* ResetDirection in Resources */,
+				09D9F860169F3A7500296396 /* SetDirectionByMatrix in Resources */,
+				09D9F861169F3A7500296396 /* SetOrigin in Resources */,
+				09D9F862169F3A7500296396 /* SetSpacing in Resources */,
+				09D9F863169F3A7500296396 /* SmoothImage in Resources */,
+				09D9F864169F3A7500296396 /* StackSlices in Resources */,
+				09D9F865169F3A7500296396 /* SurfaceBasedSmoothing in Resources */,
+				09D9F866169F3A7500296396 /* SurfaceCurvature in Resources */,
+				09D9F867169F3A7500296396 /* ThresholdImage in Resources */,
+				09D9F868169F3A7500296396 /* TileImages in Resources */,
+				09D9F869169F3A7500296396 /* WarpImageMultiTransform in Resources */,
+				09D9F86A169F3A7500296396 /* WarpTensorImageMultiTransform in Resources */,
+				09D9F86B169F3A7500296396 /* WarpTimeSeriesImageMultiTransform in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +421,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		09D9F86F169F3B0300296396 /* Atropos */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D9F86E169F3B0300296396 /* en */,
+			);
+			name = Atropos;
+			sourceTree = "<group>";
+		};
+		09D9F872169F3B1600296396 /* ANTS */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D9F871169F3B1600296396 /* en */,
+			);
+			name = ANTS;
+			sourceTree = "<group>";
+		};
+		09EECA4A1691295F001FD8C7 /* dcm2nii */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EECA491691295F001FD8C7 /* en */,
+			);
+			name = dcm2nii;
+			sourceTree = "<group>";
+		};
 		C8CDF377164809AA00BC4F9C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

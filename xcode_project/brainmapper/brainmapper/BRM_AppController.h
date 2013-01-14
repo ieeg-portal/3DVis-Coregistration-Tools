@@ -24,5 +24,7 @@
 @property (copy) NSMutableArray *mriArray, *ctArray;
 @property (readwrite) Boolean hasDepth, inclSegm;
 
+-(void)stackDicomArray:(NSMutableArray*)arr forFile:(NSString*)inFile;
+-(void)coregScript;
 
 @end

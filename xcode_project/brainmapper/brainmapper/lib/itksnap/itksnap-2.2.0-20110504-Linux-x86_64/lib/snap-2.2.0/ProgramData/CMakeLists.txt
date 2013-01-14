@@ -1,0 +1,2 @@
+SUBDIRS(HTMLHelp Images2D Presets)
+INSTALL_FILES(${SNAP_DATA_INSTALL_DIR} "\\.(txt)$")
