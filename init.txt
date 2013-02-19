@@ -1,0 +1,22 @@
+
+# FSL Configuration
+FSLDIR=${VISPATH}/lib/FSL/fsl
+PATH=${FSLDIR}/bin:${PATH}
+. ${FSLDIR}/etc/fslconf/fsl.sh
+
+# Add ANTS binaries to path
+PATH=${VISPATH}/lib/ants-bin:${PATH}
+ANTSPATH=${VISPATH}/lib/ants-bin/
+
+# Add ITKSNAP and c3d to path
+PATH=${VISPATH}/lib/itksnap/itksnap-2.2.0-20110504-Linux-x86_64/bin:${PATH}
+PATH=${VISPATH}/lib/itksnap/c3d-0.8.2-Linux-x86_64/bin:${PATH}
+
+# Add MRIcron to the path
+PATH=${VISPATH}/lib/mricron:${PATH}
+
+
+# Add lib/etc to path (home of TileImageFilter)
+PATH=${VISPATH}/lib/etc:${PATH}
+
+export PATH ANTSPATH FSLDIR VISPATH

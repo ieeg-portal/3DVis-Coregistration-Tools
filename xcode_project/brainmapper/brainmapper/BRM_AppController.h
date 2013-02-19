@@ -18,11 +18,13 @@
     
     NSMutableArray *mriArray;
     NSMutableArray *ctArray;
+    NSString *destPath;
     Boolean hasDepth, inclSegm;
 
 }
 @property (copy) NSMutableArray *mriArray, *ctArray;
 @property (readwrite) Boolean hasDepth, inclSegm;
+@property (copy) NSString *destPath;
 
 -(void)stackDicomArray:(NSMutableArray*)arr forFile:(NSString*)inFile;
 -(void)coregScript;

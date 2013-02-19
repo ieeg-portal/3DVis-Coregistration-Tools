@@ -1,16 +1,93 @@
 #!/bin/bash
 
-T1=mri.nii.gz # pre-resection
-template=NIREPG1template.nii.gz
-templateLabels=NIREPG1template_35labels.nii.gz
+#--------------------------------------------------------------------------------------------------------
+#!/bin/sh
+
+#  init.sh
+#  brainmapper
+#
+#  Created by Allie on 2/3/13.
+#  Copyright (c) 2013 University of Pennsylvania. All rights reserved.
+
+RESPATH=$1
+IMAGEPATH=$2
+echo "Path to executables is $RESPATH, images is $IMAGEPATH"
+
+# FSL Configuration
+FSLDIR=${RESPATH}
+echo $FSLDIR
+PATH=${FSLDIR}/bin:${PATH}
+#. ${FSLDIR}/etc/fslconf/fsl.sh
+
+# Add binaries to path
+PATH=${RESPATH}:${PATH}
+ANTSPATH=${RESPATH}/
+
+export ANTSPATH PATH FSLDIR
+
+#--------------------Below copied from fsh.sh-------------------------------
+#  - note that the user should set
+
+# Written by Mark Jenkinson
+#  FMRIB Analysis Group, University of Oxford
+
+# SHCOPYRIGHT
+
+
+#### Set up standard FSL user environment variables ####
+
+# The following variable selects the default output image type
+# Legal values are:  ANALYZE  NIFTI  NIFTI_PAIR  ANALYZE_GZ  NIFTI_GZ  NIFTI_PAIR_GZ
+# This would typically be overwritten in ${HOME}/.fslconf/fsl.sh if the user wished
+#  to write files with a different format
+FSLOUTPUTTYPE=NIFTI_GZ
+export FSLOUTPUTTYPE
+
+# Comment out the definition of FSLMULTIFILEQUIT to enable
+#  FSL programs to soldier on after detecting multiple image
+#  files with the same basename ( e.g. epi.hdr and epi.nii )
+FSLMULTIFILEQUIT=TRUE ; export FSLMULTIFILEQUIT
+
+FSLCONFDIR=$FSLDIR/config
+#FSLMACHTYPE=`$RESPATH/fslmachtype.sh`
+
+#export FSLCONFDIR FSLMACHTYPE
+
+echo "Path in init.sh is $PATH"
+
+###################################################
+####    DO NOT ADD ANYTHING BELOW THIS LINE    ####
+###################################################
+
+if [ -f /usr/local/etc/fslconf/fsl.sh ] ; then
+. /usr/local/etc/fslconf/fsl.sh ;
+fi
+
+
+if [ -f /etc/fslconf/fsl.sh ] ; then
+. /etc/fslconf/fsl.sh ;
+fi
+
+
+if [ -f "${HOME}/.fslconf/fsl.sh" ] ; then
+. "${HOME}/.fslconf/fsl.sh" ;
+fi
+
+#------------------------------------------------------------
+
+T1=${IMAGEPATH}/mri.nii.gz # pre-resection
+template=${RESPATH}/NIREPG1template.nii.gz
+templateLabels=${RESPATH}/NIREPG1template_35labels.nii.gz
 warpOutputPrefix=NIREP # don't be the same as template file main body
-CT=ct.nii.gz # with electrodes
+CT=${IMAGEPATH}/ct.nii.gz # with electrodes
 electrode_thres=2000
 #T2=20070922_t2w003.nii.gz # post-resection
 #resection=20070922_t2w003_resectedRegion.nii.gz
 MRF_smoothness=0.1
 
 # strip the skull in T1
+echo "bet2 $T1 ${T1%.nii.gz}_brain -m"
+echo "FSLOUTPUTTYPE $FSLOUTPUTTYPE"
 bet2 $T1 ${T1%.nii.gz}_brain -m
 
 # warp the NIREP template to skull-stripped T1
