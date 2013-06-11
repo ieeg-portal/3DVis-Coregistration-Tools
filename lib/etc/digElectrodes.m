@@ -42,7 +42,7 @@ str = sprintf(['! gunzip ' brainPath]);
 eval(str);
 str = sprintf(['! gunzip ' electrodePath]);
 eval(str);
-fn_brain = char(regexp(brainPath,'(\w+).nii.gz','tokens','once')); 
+fn_brain = char(regexp(brainPath,'(.+).nii.gz','tokens','once'));
 bImg = load_untouch_nii([fn_brain '.nii']);
 bImg = bImg.img;
 fn_elec = char(regexp(electrodePath,'(\w+).nii.gz','tokens','once')); 
@@ -56,7 +56,7 @@ end
 eImg_out = zeros(size(eImg));
 %-------------------------------------------------------------------------
 
-%% -------------------------------------------------------------------------
+%% ------------------------------------------------------------------------
 % MAIN
 %------------------------------------------------------------------------
 
@@ -84,13 +84,16 @@ for e=1:econn.NumObjects
         linspace(e_com(3),e_com(3) + dir(3),dist)']);
     for d=1:length(path)
         pt = path(d,:);
-        if bImg(pt(1),pt(2),pt(3)) == 0
+        if(sum(pt < 1) > 0); pt(pt < 1) = 1; break; end % keep from going off the map
+        if (bImg(pt(1),pt(2),pt(3)) == 0) % if you hit brain 
             break
         end
+        
     end
     % shift old electrode by difference between exterior point and center
     % of mass
     new_xyz = coords + repmat(pt - e_com,size(coords,1),1);
+    new_xyz(new_xyz<1)=1;
     % there has to be a better way to do this
     for i = 1:size(new_xyz,1)
         eImg_out(new_xyz(i,1), new_xyz(i,2), new_xyz(i,3)) = 1;
